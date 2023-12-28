@@ -5,7 +5,7 @@
 }
 
 .signup-img-container{
-    width:45%;
+    width:60%;
     overflow: hidden;
 }
 
@@ -27,3 +27,43 @@
     padding-bottom: 1rem;
     font-size: 2rem;
 }
+
+@media only screen and (max-width:550px) {
+    .signup-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15%;
+    }
+    .signup-img-container{
+        display: none;
+    }
+    .signup-content-container{
+        margin: auto;
+        width:80%;
+    }
+    .content-wrapper{
+        padding-right: 0remrem;
+    }
+   
+    
+}
+@media only screen and (max-width:900px) {
+    .signup-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15%;
+    }
+    .signup-img-container{
+        display: none;
+    }
+    .signup-content-container{
+        margin: auto;
+        width:80%;
+    }
+    .content-wrapper{
+        padding-right: 0rem;
+    }
+    
+  }
