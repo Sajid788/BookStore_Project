@@ -27,7 +27,7 @@ const AuthForm = ({ buttonName }) => {
                 .then(() => {
                     navigate('/');
                 })
-                .catch((err) => setError("Invalid Credentials"));
+                .catch((err) => setError("Invalid Credentials !"));
         } else {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredentials) => {
@@ -40,8 +40,7 @@ const AuthForm = ({ buttonName }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            {error && <div style={{ color: 'red' }}>{error}</div>}
-
+            
             {buttonName === 'Sign Up' && (
                 <div className='form-group'>
                     <label>Username</label>
@@ -79,7 +78,7 @@ const AuthForm = ({ buttonName }) => {
                     required
                 />
             </div>
-
+            {error && <div style={{ color: 'red' }}>{error}</div>}
             <div className='form-group'>
                 <input
                     type="submit"
@@ -87,6 +86,8 @@ const AuthForm = ({ buttonName }) => {
                     value={buttonName}
                 />
             </div>
+
+            
         </form>
     );
 };
