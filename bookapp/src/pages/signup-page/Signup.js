@@ -2,6 +2,7 @@ import React from 'react';
 import './signup.styles.css';
 import AuthBgImg from '../../assets/auth-bg.jpg';
 
+import AuthForm from '../../components/forms/authForm/AuthForm';
 
 const Signup = () => {
     return (
@@ -16,6 +17,7 @@ const Signup = () => {
                             <h2>Signup</h2>
                             <p>Create a new account with email and password.</p>
 
+                            <AuthForm buttonName="Sign Up" />
                         </div>
                     </div>
                 </div>
